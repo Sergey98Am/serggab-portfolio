@@ -11,7 +11,8 @@ body {
 
 .section {
   position: relative;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/bg.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/bg.jpg");
   background-size: cover;
   padding-top: 250px;
   padding-bottom: 250px;
@@ -67,7 +68,6 @@ body {
     width: 100%;
   }
 }
-
 
 .menu-toggle {
   display: none;
@@ -271,7 +271,6 @@ body {
   left: 0;
 }
 
-
 .logo {
   width: 120px;
 }
@@ -312,9 +311,7 @@ body {
   white-space: nowrap;
   text-align: center;
   letter-spacing: 7px;
-  animation:
-    typing 3.5s steps(30, end),
-    bc .5s step-end infinite;
+  animation: typing 3.5s steps(30, end), bc 0.5s step-end infinite;
 }
 
 @media (max-width: 575px) {
@@ -331,17 +328,15 @@ body {
 
 @keyframes typing {
   from {
-    width: 0
+    width: 0;
   }
 
   to {
-    width: 100%
+    width: 100%;
   }
 }
 
-
 @keyframes bc {
-
   from,
   to {
     border-color: transparent;
@@ -353,7 +348,8 @@ body {
 }
 
 .section-1 {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/bg1.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/bg1.jpg");
   background-size: cover;
   background-attachment: fixed;
   padding-top: 120px;
@@ -363,8 +359,7 @@ body {
 .full-info {
   border: 1px solid grey;
   transition: 0.5s;
-  font-family: 'Caladea';
-
+  font-family: "Caladea";
 }
 
 .full-info:hover {
@@ -377,7 +372,7 @@ body {
   align-items: center;
   padding-top: 10px;
   padding-bottom: 10px;
-  background: rgba(59, 34, 6, 0.3)
+  background: rgba(59, 34, 6, 0.3);
 }
 
 .p-i h2 {
@@ -398,12 +393,11 @@ body {
   align-items: center;
   padding-top: 10px;
   padding-bottom: 10px;
-  background: rgba(0, 0, 0, 0.4)
+  background: rgba(0, 0, 0, 0.4);
 }
 
 @media (max-width: 768px) {
   .section-1 .pr-it {
-
     justify-content: center;
   }
 }
@@ -437,7 +431,7 @@ body {
   padding: 10px;
   width: 140px;
   height: 140px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 @media (max-width: 475px) {
@@ -463,7 +457,8 @@ body {
 }
 
 .section-2 {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/bg2.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/bg2.jpg");
   background-size: cover;
   background-attachment: fixed;
   padding-top: 120px;
@@ -477,24 +472,35 @@ body {
   text-transform: uppercase;
 }
 
-.pf-card { 
+.pf-card {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   background: rgb(33, 33, 33);
   width: 100%;
- min-height: 300px;
+  min-height: 300px;
   position: relative;
   text-align: center;
-  color: #fff;
-  font-size: 45px;
+  font-size: 22px;
   cursor: pointer;
   margin-bottom: 20px;
   transition: 0.5s;
 }
 
-.pf-card:hover{
+.pf-card:hover {
   box-shadow: 0px 5px 30px #000;
+}
+
+.pf-card a {
+  color: #fff;
+  text-decoration: underline;
+  margin-top: 12px;
+  transition: 0.3s;
+}
+
+.pf-card a:hover {
+  letter-spacing: 2px;
 }
 
 .pf-card img {
@@ -503,67 +509,65 @@ body {
   object-fit: contain;
 }
 
-
-
-.videos{
+.videos {
   padding-top: 20px;
   padding-bottom: 20px;
   color: #fff;
 }
-.vd{
+.vd {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.footer{
+.footer {
   padding-top: 100px;
   padding-bottom: 100px;
- background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/bg3.jpg');
- background-size: cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/bg3.jpg");
+  background-size: cover;
 }
-.cont h1{
+.cont h1 {
   margin-bottom: 50px;
   color: #fff;
 }
 .icons ul {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .icons ul li {
-
-    list-style: none;
-    margin: 0 10px;
+  list-style: none;
+  margin: 0 10px;
 }
 .icons ul li a {
-  font-size: 20px;  
+  font-size: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: white;
-    text-align: center;
-    transition: 0.5s;
-    transform: translate(0,0px);
-    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  text-align: center;
+  transition: 0.5s;
+  transform: translate(0, 0px);
+  box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
 }
 .icons ul li a:hover {
-    transform: rotate(0deg) skew(0deg) translate(0, -7px);
-    background: grey;
-    color: #fff;
+  transform: rotate(0deg) skew(0deg) translate(0, -7px);
+  background: grey;
+  color: #fff;
 }
-.phone-number{
-    margin-top: 30px;
+.phone-number {
+  margin-top: 30px;
 }
-.phone-number h3{
+.phone-number h3 {
   color: grey;
 }
-.last-text h3{
+.last-text h3 {
   margin-top: 30px;
   font-style: italic;
   color: grey;
